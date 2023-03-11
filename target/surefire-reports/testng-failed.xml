@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [All Test Suite]">
+  <listeners>
+    <listener class-name="api.listener.TestListener"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="D:/APIAutomation(failed)" parallel="methods">
+    <classes>
+      <class name="com.test.GetTests">
+        <methods>
+          <include name="getEmployee" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- com.test.GetTests -->
+      <class name="com.test.JSONAssignment">
+        <methods>
+          <include name="Jsonassignment"/>
+        </methods>
+      </class> <!-- com.test.JSONAssignment -->
+    </classes>
+  </test> <!-- D:/APIAutomation(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->

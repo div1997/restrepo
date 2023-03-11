@@ -1,0 +1,1891 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Mar 11, 2023 02:21:41 PM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('author-view')">
+<a id="nav-author" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-user"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i></a>
+<ul id="author-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">divya123</a><a class="dropdown-item" href="#"></a><a class="dropdown-item" href="#">alka</a><a class="dropdown-item" href="#">divya</a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">getclass</a><a class="dropdown-item" href="#"></a><a class="dropdown-item" href="#">Smoke</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author="divya123 alka"
+          tag="getclass Smoke"
+          device="">
+          <div class="test-detail">
+            <p class="name">getTest</p>
+            <p class="text-sm">
+              <span>2:21:41 PM</span> / <span>00:00:04:127</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">getTest</h5>
+<span class='badge badge-success'>03.11.2023 2:21:41 PM</span>
+<span class='badge badge-danger'>03.11.2023 2:21:45 PM</span>
+<span class='badge badge-default'>00:00:04:127</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">divya123</span>
+<span class="badge badge-pill badge-default">alka</span>
+<span class="badge badge-pill badge-default">getclass</span>
+<span class="badge badge-pill badge-default">Smoke</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:21:41 PM</td>
+        <td>
+          get all employee
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:21:45 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-0'></div>
+ <script>
+  function jsonTreeCreate0() { 
+   document.getElementById('code-block-json-0').innerHTML = JSONTree.create([
+    {
+        "name": " diya varnwal",
+        "id": 1,
+        "email": "diya123@gmail.com",
+        "address": {
+            "city": "delhi",
+            "pincode": 230093,
+            "houseno": 1202
+        },
+        "jobs": [
+            "sale",
+            "marketing",
+            "dev"
+        ],
+        "department": "IT Sector"
+    },
+    {
+        "name": " raha varnwal",
+        "id": 2,
+        "email": "riya123@gmail.com",
+        "address": {
+            "city": "delhi",
+            "pincode": 230093,
+            "houseno": 1202
+        },
+        "jobs": [
+            "sale",
+            "marketing",
+            "dev"
+        ],
+        "department": "IT Sector"
+    },
+    {
+        "address": {
+            "pincode": "560772",
+            "city": "delhi",
+            "houseno": "1"
+        },
+        "jobs": [
+            "qa",
+            "fullstack"
+        ],
+        "name": "Max Carter",
+        "id": 128,
+        "department": "IT",
+        "email": "Max_Carter@gmail.com"
+    },
+    {
+        "address": {
+            "pincode": "515422",
+            "city": "delhi",
+            "houseno": "1"
+        },
+        "jobs": [
+            "qa",
+            "fullstack"
+        ],
+        "name": "Miss Violeta Senger",
+        "id": 122,
+        "department": "IT",
+        "email": "Miss_Violeta_Senger@gmail.com"
+    },
+    {
+        "address": {
+            "pincode": "888766",
+            "city": "delhi",
+            "houseno": "6"
+        },
+        "jobs": [
+            "qa",
+            "fullstack"
+        ],
+        "name": "Brittanie Fadel",
+        "id": 199,
+        "department": "IT",
+        "email": "Brittanie_Fadel@gmail.com"
+    },
+    {
+        "address": {
+            "pincode": "086408",
+            "city": "delhi",
+            "houseno": "6"
+        },
+        "jobs": [
+            "qa",
+            "fullstack"
+        ],
+        "name": "Chauncey Bailey",
+        "id": 112,
+        "department": "IT",
+        "email": "Chauncey_Bailey@gmail.com"
+    },
+    {
+        "address": {
+            "pincode": "361777",
+            "city": "delhi",
+            "houseno": "3"
+        },
+        "jobs": [
+            "qa",
+            "fullstack"
+        ],
+        "name": "Ms. Sara Armstrong",
+        "id": 146,
+        "department": "IT",
+        "email": "Ms._Sara_Armstrong@gmail.com"
+    },
+    {
+        "address": {
+            "pincode": "733172",
+            "city": "delhi",
+            "houseno": "0"
+        },
+        "jobs": [
+            "qa",
+            "fullstack"
+        ],
+        "name": "Edith Shanahan Jr.",
+        "id": 198,
+        "department": "IT",
+        "email": "Edith_Shanahan_Jr.@gmail.com"
+    },
+    {
+        "address": {
+            "pincode": "415037",
+            "city": "delhi",
+            "houseno": "8"
+        },
+        "jobs": [
+            "qa",
+            "fullstack"
+        ],
+        "name": "Linh Altenwerth PhD",
+        "id": 170,
+        "department": "IT",
+        "email": "Linh_Altenwerth_PhD@gmail.com"
+    },
+    {
+        "address": {
+            "pincode": "738832",
+            "city": "delhi",
+            "houseno": "3"
+        },
+        "jobs": [
+            "qa",
+            "fullstack"
+        ],
+        "name": "Stephen Bahringer",
+        "id": 119,
+        "department": "IT",
+        "email": "Stephen_Bahringer@gmail.com"
+    },
+    {
+        "address": {
+            "pincode": "682331",
+            "city": "delhi",
+            "houseno": "3"
+        },
+        "jobs": [
+            "qa",
+            "fullstack"
+        ],
+        "name": "Miguel Reichert",
+        "id": 186,
+        "department": "IT",
+        "email": "Everett_Ortiz@gmail.com"
+    },
+    {
+        "name": "Jayson Streich",
+        "id": 103,
+        "email": "Jayson_Streich@gmail.com"
+    },
+    {
+        "id": 120,
+        "name": "Sudie Grant",
+        "email": "Sudie_Grant@gmail.com"
+    }
+]); 
+  }
+  jsonTreeCreate0();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:21:45 PM</td>
+        <td>
+          test is pass
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="2"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">getEmployee</p>
+            <p class="text-sm">
+              <span>2:21:41 PM</span> / <span>00:00:04:883</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">getEmployee</h5>
+<span class='badge badge-success'>03.11.2023 2:21:41 PM</span>
+<span class='badge badge-danger'>03.11.2023 2:21:46 PM</span>
+<span class='badge badge-default'>00:00:04:883</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default"></span>
+<span class="badge badge-pill badge-default"></span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:21:41 PM</td>
+        <td>
+          get employee by id
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:21:46 PM</td>
+        <td>
+          test failed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>2:21:46 PM</td>
+        <td>
+          <span class='badge white-text red'>java.lang.AssertionError: [employee name] 
+expected: "diya"
+ but was: " diya varnwal"</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="3"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">getTest</p>
+            <p class="text-sm">
+              <span>2:21:45 PM</span> / <span>00:00:00:004</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">getTest</h5>
+<span class='badge badge-success'>03.11.2023 2:21:45 PM</span>
+<span class='badge badge-danger'>03.11.2023 2:21:45 PM</span>
+<span class='badge badge-default'>00:00:00:004</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:21:45 PM</td>
+        <td>
+          getTest is success
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:21:45 PM</td>
+        <td>
+          1
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="4"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">create_employee</p>
+            <p class="text-sm">
+              <span>2:21:45 PM</span> / <span>00:00:01:636</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">create_employee</h5>
+<span class='badge badge-success'>03.11.2023 2:21:45 PM</span>
+<span class='badge badge-danger'>03.11.2023 2:21:47 PM</span>
+<span class='badge badge-default'>00:00:01:636</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default"></span>
+<span class="badge badge-pill badge-default"></span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:21:45 PM</td>
+        <td>
+          create employee with builder design pattern
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:21:47 PM</td>
+        <td>
+          get details of request
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:21:47 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-2'></div>
+ <script>
+  function jsonTreeCreate2() { 
+   document.getElementById('code-block-json-2').innerHTML = JSONTree.create({"name":"Leeanne Hoppe","id":105,"email":"Leeanne_Hoppe@gmail.com"}); 
+  }
+  jsonTreeCreate2();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:21:47 PM</td>
+        <td>
+          Content-Type:Application/JSON
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:21:47 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-3'></div>
+ <script>
+  function jsonTreeCreate3() { 
+   document.getElementById('code-block-json-3').innerHTML = JSONTree.create({
+    "name": "Leeanne Hoppe",
+    "id": 105,
+    "email": "Leeanne_Hoppe@gmail.com"
+}); 
+  }
+  jsonTreeCreate3();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:21:47 PM</td>
+        <td>
+          test is pass
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="5"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">getEmployee</p>
+            <p class="text-sm">
+              <span>2:21:46 PM</span> / <span>00:00:00:120</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">getEmployee</h5>
+<span class='badge badge-success'>03.11.2023 2:21:46 PM</span>
+<span class='badge badge-danger'>03.11.2023 2:21:46 PM</span>
+<span class='badge badge-default'>00:00:00:120</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default"></span>
+<span class="badge badge-pill badge-default"></span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:21:46 PM</td>
+        <td>
+          get employee by id
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:21:46 PM</td>
+        <td>
+          test failed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>2:21:46 PM</td>
+        <td>
+          <span class='badge white-text red'>java.lang.AssertionError: [employee name] 
+expected: "riya"
+ but was: " raha varnwal"</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="6"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">createandreplace_employee</p>
+            <p class="text-sm">
+              <span>2:21:46 PM</span> / <span>00:00:00:169</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">createandreplace_employee</h5>
+<span class='badge badge-success'>03.11.2023 2:21:46 PM</span>
+<span class='badge badge-danger'>03.11.2023 2:21:46 PM</span>
+<span class='badge badge-default'>00:00:00:169</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default"></span>
+<span class="badge badge-pill badge-default"></span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:21:46 PM</td>
+        <td>
+          create employee with external files
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:21:46 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-1'></div>
+ <script>
+  function jsonTreeCreate1() { 
+   document.getElementById('code-block-json-1').innerHTML = JSONTree.create({
+    "id": 113,
+    "name": "Ms. Roselyn Howe",
+    "email": "Ms._Roselyn_Howe@gmail.com"
+}); 
+  }
+  jsonTreeCreate1();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:21:46 PM</td>
+        <td>
+          test is pass
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="7"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">createandreplace_employee</p>
+            <p class="text-sm">
+              <span>2:21:46 PM</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">createandreplace_employee</h5>
+<span class='badge badge-success'>03.11.2023 2:21:46 PM</span>
+<span class='badge badge-danger'>03.11.2023 2:21:46 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:21:46 PM</td>
+        <td>
+          createandreplace_employee is success
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:21:46 PM</td>
+        <td>
+          1
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="8"
+          author="divya"
+          tag="getclass Smoke"
+          device="">
+          <div class="test-detail">
+            <p class="name">gitcurdassignment</p>
+            <p class="text-sm">
+              <span>2:21:46 PM</span> / <span>00:00:04:110</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">gitcurdassignment</h5>
+<span class='badge badge-success'>03.11.2023 2:21:46 PM</span>
+<span class='badge badge-danger'>03.11.2023 2:21:50 PM</span>
+<span class='badge badge-default'>00:00:04:110</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">divya</span>
+<span class="badge badge-pill badge-default">getclass</span>
+<span class="badge badge-pill badge-default">Smoke</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:21:47 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-4'></div>
+ <script>
+  function jsonTreeCreate4() { 
+   document.getElementById('code-block-json-4').innerHTML = JSONTree.create({
+    "id": 238008091,
+    "node_id": "MDEwOlJlcG9zaXRvcnkyMzgwMDgwOTE=",
+    "name": "Hello-World",
+    "full_name": "div1997/Hello-World",
+    "private": false,
+    "owner": {
+        "login": "div1997",
+        "id": 32096104,
+        "node_id": "MDQ6VXNlcjMyMDk2MTA0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/32096104?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/div1997",
+        "html_url": "https://github.com/div1997",
+        "followers_url": "https://api.github.com/users/div1997/followers",
+        "following_url": "https://api.github.com/users/div1997/following{/other_user}",
+        "gists_url": "https://api.github.com/users/div1997/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/div1997/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/div1997/subscriptions",
+        "organizations_url": "https://api.github.com/users/div1997/orgs",
+        "repos_url": "https://api.github.com/users/div1997/repos",
+        "events_url": "https://api.github.com/users/div1997/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/div1997/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "html_url": "https://github.com/div1997/Hello-World",
+    "description": "This is your first repo!",
+    "fork": false,
+    "url": "https://api.github.com/repos/div1997/Hello-World",
+    "forks_url": "https://api.github.com/repos/div1997/Hello-World/forks",
+    "keys_url": "https://api.github.com/repos/div1997/Hello-World/keys{/key_id}",
+    "collaborators_url": "https://api.github.com/repos/div1997/Hello-World/collaborators{/collaborator}",
+    "teams_url": "https://api.github.com/repos/div1997/Hello-World/teams",
+    "hooks_url": "https://api.github.com/repos/div1997/Hello-World/hooks",
+    "issue_events_url": "https://api.github.com/repos/div1997/Hello-World/issues/events{/number}",
+    "events_url": "https://api.github.com/repos/div1997/Hello-World/events",
+    "assignees_url": "https://api.github.com/repos/div1997/Hello-World/assignees{/user}",
+    "branches_url": "https://api.github.com/repos/div1997/Hello-World/branches{/branch}",
+    "tags_url": "https://api.github.com/repos/div1997/Hello-World/tags",
+    "blobs_url": "https://api.github.com/repos/div1997/Hello-World/git/blobs{/sha}",
+    "git_tags_url": "https://api.github.com/repos/div1997/Hello-World/git/tags{/sha}",
+    "git_refs_url": "https://api.github.com/repos/div1997/Hello-World/git/refs{/sha}",
+    "trees_url": "https://api.github.com/repos/div1997/Hello-World/git/trees{/sha}",
+    "statuses_url": "https://api.github.com/repos/div1997/Hello-World/statuses/{sha}",
+    "languages_url": "https://api.github.com/repos/div1997/Hello-World/languages",
+    "stargazers_url": "https://api.github.com/repos/div1997/Hello-World/stargazers",
+    "contributors_url": "https://api.github.com/repos/div1997/Hello-World/contributors",
+    "subscribers_url": "https://api.github.com/repos/div1997/Hello-World/subscribers",
+    "subscription_url": "https://api.github.com/repos/div1997/Hello-World/subscription",
+    "commits_url": "https://api.github.com/repos/div1997/Hello-World/commits{/sha}",
+    "git_commits_url": "https://api.github.com/repos/div1997/Hello-World/git/commits{/sha}",
+    "comments_url": "https://api.github.com/repos/div1997/Hello-World/comments{/number}",
+    "issue_comment_url": "https://api.github.com/repos/div1997/Hello-World/issues/comments{/number}",
+    "contents_url": "https://api.github.com/repos/div1997/Hello-World/contents/{+path}",
+    "compare_url": "https://api.github.com/repos/div1997/Hello-World/compare/{base}...{head}",
+    "merges_url": "https://api.github.com/repos/div1997/Hello-World/merges",
+    "archive_url": "https://api.github.com/repos/div1997/Hello-World/{archive_format}{/ref}",
+    "downloads_url": "https://api.github.com/repos/div1997/Hello-World/downloads",
+    "issues_url": "https://api.github.com/repos/div1997/Hello-World/issues{/number}",
+    "pulls_url": "https://api.github.com/repos/div1997/Hello-World/pulls{/number}",
+    "milestones_url": "https://api.github.com/repos/div1997/Hello-World/milestones{/number}",
+    "notifications_url": "https://api.github.com/repos/div1997/Hello-World/notifications{?since,all,participating}",
+    "labels_url": "https://api.github.com/repos/div1997/Hello-World/labels{/name}",
+    "releases_url": "https://api.github.com/repos/div1997/Hello-World/releases{/id}",
+    "deployments_url": "https://api.github.com/repos/div1997/Hello-World/deployments",
+    "created_at": "2020-02-03T16:19:27Z",
+    "updated_at": "2023-03-10T10:06:57Z",
+    "pushed_at": "2020-10-13T19:17:45Z",
+    "git_url": "git://github.com/div1997/Hello-World.git",
+    "ssh_url": "git@github.com:div1997/Hello-World.git",
+    "clone_url": "https://github.com/div1997/Hello-World.git",
+    "svn_url": "https://github.com/div1997/Hello-World",
+    "homepage": "https://github.com",
+    "size": 5,
+    "stargazers_count": 0,
+    "watchers_count": 0,
+    "language": "Java",
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks_count": 0,
+    "mirror_url": null,
+    "archived": false,
+    "disabled": false,
+    "open_issues_count": 1,
+    "license": null,
+    "allow_forking": true,
+    "is_template": true,
+    "web_commit_signoff_required": false,
+    "topics": [
+        
+    ],
+    "visibility": "public",
+    "forks": 0,
+    "open_issues": 1,
+    "watchers": 0,
+    "default_branch": "API_Dev",
+    "permissions": {
+        "admin": true,
+        "maintain": true,
+        "push": true,
+        "triage": true,
+        "pull": true
+    },
+    "temp_clone_token": "",
+    "allow_squash_merge": true,
+    "allow_merge_commit": true,
+    "allow_rebase_merge": true,
+    "allow_auto_merge": false,
+    "delete_branch_on_merge": false,
+    "allow_update_branch": false,
+    "use_squash_pr_title_as_default": false,
+    "squash_merge_commit_message": "COMMIT_MESSAGES",
+    "squash_merge_commit_title": "COMMIT_OR_PR_TITLE",
+    "merge_commit_message": "PR_TITLE",
+    "merge_commit_title": "MERGE_MESSAGE",
+    "security_and_analysis": {
+        "secret_scanning": {
+            "status": "disabled"
+        },
+        "secret_scanning_push_protection": {
+            "status": "disabled"
+        }
+    },
+    "network_count": 0,
+    "subscribers_count": 1
+}); 
+  }
+  jsonTreeCreate4();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:21:49 PM</td>
+        <td>
+          repositry name restrepoCustomer-Identity-Technician
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:21:49 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-5'></div>
+ <script>
+  function jsonTreeCreate5() { 
+   document.getElementById('code-block-json-5').innerHTML = JSONTree.create({
+    "id": 612540693,
+    "node_id": "R_kgDOJIKhFQ",
+    "name": "restrepoCustomer-Identity-Technician",
+    "full_name": "div1997/restrepoCustomer-Identity-Technician",
+    "private": false,
+    "owner": {
+        "login": "div1997",
+        "id": 32096104,
+        "node_id": "MDQ6VXNlcjMyMDk2MTA0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/32096104?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/div1997",
+        "html_url": "https://github.com/div1997",
+        "followers_url": "https://api.github.com/users/div1997/followers",
+        "following_url": "https://api.github.com/users/div1997/following{/other_user}",
+        "gists_url": "https://api.github.com/users/div1997/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/div1997/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/div1997/subscriptions",
+        "organizations_url": "https://api.github.com/users/div1997/orgs",
+        "repos_url": "https://api.github.com/users/div1997/repos",
+        "events_url": "https://api.github.com/users/div1997/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/div1997/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "html_url": "https://github.com/div1997/restrepoCustomer-Identity-Technician",
+    "description": " created through restassured api",
+    "fork": false,
+    "url": "https://api.github.com/repos/div1997/restrepoCustomer-Identity-Technician",
+    "forks_url": "https://api.github.com/repos/div1997/restrepoCustomer-Identity-Technician/forks",
+    "keys_url": "https://api.github.com/repos/div1997/restrepoCustomer-Identity-Technician/keys{/key_id}",
+    "collaborators_url": "https://api.github.com/repos/div1997/restrepoCustomer-Identity-Technician/collaborators{/collaborator}",
+    "teams_url": "https://api.github.com/repos/div1997/restrepoCustomer-Identity-Technician/teams",
+    "hooks_url": "https://api.github.com/repos/div1997/restrepoCustomer-Identity-Technician/hooks",
+    "issue_events_url": "https://api.github.com/repos/div1997/restrepoCustomer-Identity-Technician/issues/events{/number}",
+    "events_url": "https://api.github.com/repos/div1997/restrepoCustomer-Identity-Technician/events",
+    "assignees_url": "https://api.github.com/repos/div1997/restrepoCustomer-Identity-Technician/assignees{/user}",
+    "branches_url": "https://api.github.com/repos/div1997/restrepoCustomer-Identity-Technician/branches{/branch}",
+    "tags_url": "https://api.github.com/repos/div1997/restrepoCustomer-Identity-Technician/tags",
+    "blobs_url": "https://api.github.com/repos/div1997/restrepoCustomer-Identity-Technician/git/blobs{/sha}",
+    "git_tags_url": "https://api.github.com/repos/div1997/restrepoCustomer-Identity-Technician/git/tags{/sha}",
+    "git_refs_url": "https://api.github.com/repos/div1997/restrepoCustomer-Identity-Technician/git/refs{/sha}",
+    "trees_url": "https://api.github.com/repos/div1997/restrepoCustomer-Identity-Technician/git/trees{/sha}",
+    "statuses_url": "https://api.github.com/repos/div1997/restrepoCustomer-Identity-Technician/statuses/{sha}",
+    "languages_url": "https://api.github.com/repos/div1997/restrepoCustomer-Identity-Technician/languages",
+    "stargazers_url": "https://api.github.com/repos/div1997/restrepoCustomer-Identity-Technician/stargazers",
+    "contributors_url": "https://api.github.com/repos/div1997/restrepoCustomer-Identity-Technician/contributors",
+    "subscribers_url": "https://api.github.com/repos/div1997/restrepoCustomer-Identity-Technician/subscribers",
+    "subscription_url": "https://api.github.com/repos/div1997/restrepoCustomer-Identity-Technician/subscription",
+    "commits_url": "https://api.github.com/repos/div1997/restrepoCustomer-Identity-Technician/commits{/sha}",
+    "git_commits_url": "https://api.github.com/repos/div1997/restrepoCustomer-Identity-Technician/git/commits{/sha}",
+    "comments_url": "https://api.github.com/repos/div1997/restrepoCustomer-Identity-Technician/comments{/number}",
+    "issue_comment_url": "https://api.github.com/repos/div1997/restrepoCustomer-Identity-Technician/issues/comments{/number}",
+    "contents_url": "https://api.github.com/repos/div1997/restrepoCustomer-Identity-Technician/contents/{+path}",
+    "compare_url": "https://api.github.com/repos/div1997/restrepoCustomer-Identity-Technician/compare/{base}...{head}",
+    "merges_url": "https://api.github.com/repos/div1997/restrepoCustomer-Identity-Technician/merges",
+    "archive_url": "https://api.github.com/repos/div1997/restrepoCustomer-Identity-Technician/{archive_format}{/ref}",
+    "downloads_url": "https://api.github.com/repos/div1997/restrepoCustomer-Identity-Technician/downloads",
+    "issues_url": "https://api.github.com/repos/div1997/restrepoCustomer-Identity-Technician/issues{/number}",
+    "pulls_url": "https://api.github.com/repos/div1997/restrepoCustomer-Identity-Technician/pulls{/number}",
+    "milestones_url": "https://api.github.com/repos/div1997/restrepoCustomer-Identity-Technician/milestones{/number}",
+    "notifications_url": "https://api.github.com/repos/div1997/restrepoCustomer-Identity-Technician/notifications{?since,all,participating}",
+    "labels_url": "https://api.github.com/repos/div1997/restrepoCustomer-Identity-Technician/labels{/name}",
+    "releases_url": "https://api.github.com/repos/div1997/restrepoCustomer-Identity-Technician/releases{/id}",
+    "deployments_url": "https://api.github.com/repos/div1997/restrepoCustomer-Identity-Technician/deployments",
+    "created_at": "2023-03-11T08:51:49Z",
+    "updated_at": "2023-03-11T08:51:49Z",
+    "pushed_at": "2023-03-11T08:51:49Z",
+    "git_url": "git://github.com/div1997/restrepoCustomer-Identity-Technician.git",
+    "ssh_url": "git@github.com:div1997/restrepoCustomer-Identity-Technician.git",
+    "clone_url": "https://github.com/div1997/restrepoCustomer-Identity-Technician.git",
+    "svn_url": "https://github.com/div1997/restrepoCustomer-Identity-Technician",
+    "homepage": "https://github.com",
+    "size": 0,
+    "stargazers_count": 0,
+    "watchers_count": 0,
+    "language": null,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks_count": 0,
+    "mirror_url": null,
+    "archived": false,
+    "disabled": false,
+    "open_issues_count": 0,
+    "license": null,
+    "allow_forking": true,
+    "is_template": true,
+    "web_commit_signoff_required": false,
+    "topics": [
+        
+    ],
+    "visibility": "public",
+    "forks": 0,
+    "open_issues": 0,
+    "watchers": 0,
+    "default_branch": "main",
+    "permissions": {
+        "admin": true,
+        "maintain": true,
+        "push": true,
+        "triage": true,
+        "pull": true
+    },
+    "allow_squash_merge": true,
+    "allow_merge_commit": true,
+    "allow_rebase_merge": true,
+    "allow_auto_merge": false,
+    "delete_branch_on_merge": false,
+    "allow_update_branch": false,
+    "use_squash_pr_title_as_default": false,
+    "squash_merge_commit_message": "COMMIT_MESSAGES",
+    "squash_merge_commit_title": "COMMIT_OR_PR_TITLE",
+    "merge_commit_message": "PR_TITLE",
+    "merge_commit_title": "MERGE_MESSAGE",
+    "network_count": 0,
+    "subscribers_count": 1
+}); 
+  }
+  jsonTreeCreate5();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:21:50 PM</td>
+        <td>
+          deleted
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:21:50 PM</td>
+        <td>
+          test is pass
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="9"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">create_employee</p>
+            <p class="text-sm">
+              <span>2:21:47 PM</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">create_employee</h5>
+<span class='badge badge-success'>03.11.2023 2:21:47 PM</span>
+<span class='badge badge-danger'>03.11.2023 2:21:47 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:21:47 PM</td>
+        <td>
+          create_employee is success
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:21:47 PM</td>
+        <td>
+          1
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="10"
+          author="divya"
+          tag="getclass Smoke"
+          device="">
+          <div class="test-detail">
+            <p class="name">jiraassignment</p>
+            <p class="text-sm">
+              <span>2:21:47 PM</span> / <span>00:00:03:311</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">jiraassignment</h5>
+<span class='badge badge-success'>03.11.2023 2:21:47 PM</span>
+<span class='badge badge-danger'>03.11.2023 2:21:50 PM</span>
+<span class='badge badge-default'>00:00:03:311</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">divya</span>
+<span class="badge badge-pill badge-default">getclass</span>
+<span class="badge badge-pill badge-default">Smoke</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:21:50 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-6'></div>
+ <script>
+  function jsonTreeCreate6() { 
+   document.getElementById('code-block-json-6').innerHTML = JSONTree.create({
+    "id": "10300",
+    "key": "DEM-20",
+    "self": "http://192.168.163.1:8080/rest/api/2/issue/10300"
+}); 
+  }
+  jsonTreeCreate6();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:21:50 PM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-7'></div>
+ <script>
+  function jsonTreeCreate7() { 
+   document.getElementById('code-block-json-7').innerHTML = JSONTree.create(); 
+  }
+  jsonTreeCreate7();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:21:50 PM</td>
+        <td>
+          test is pass
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="11"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">jiraassignment</p>
+            <p class="text-sm">
+              <span>2:21:50 PM</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">jiraassignment</h5>
+<span class='badge badge-success'>03.11.2023 2:21:50 PM</span>
+<span class='badge badge-danger'>03.11.2023 2:21:50 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:21:50 PM</td>
+        <td>
+          jiraassignment is success
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:21:50 PM</td>
+        <td>
+          1
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="12"
+          author="divya"
+          tag="getclass Smoke"
+          device="">
+          <div class="test-detail">
+            <p class="name">Jsonassignment</p>
+            <p class="text-sm">
+              <span>2:21:50 PM</span> / <span>00:00:04:442</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Jsonassignment</h5>
+<span class='badge badge-success'>03.11.2023 2:21:50 PM</span>
+<span class='badge badge-danger'>03.11.2023 2:21:55 PM</span>
+<span class='badge badge-default'>00:00:04:442</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">divya</span>
+<span class="badge badge-pill badge-default">getclass</span>
+<span class="badge badge-pill badge-default">Smoke</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:21:55 PM</td>
+        <td>
+          test failed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>2:21:55 PM</td>
+        <td>
+          <span class='badge white-text red'>java.net.ConnectException: Connection refused: connect</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="13"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">gitcurdassignment</p>
+            <p class="text-sm">
+              <span>2:21:50 PM</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">gitcurdassignment</h5>
+<span class='badge badge-success'>03.11.2023 2:21:50 PM</span>
+<span class='badge badge-danger'>03.11.2023 2:21:50 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:21:50 PM</td>
+        <td>
+          gitcurdassignment is success
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:21:50 PM</td>
+        <td>
+          1
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">3</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">getclass</p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>getclass</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:21:41 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>getTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:21:46 PM</td>
+<td>
+<a href="#" class="linked" test-id='8' id='8'>gitcurdassignment</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:21:47 PM</td>
+<td>
+<a href="#" class="linked" test-id='10' id='10'>jiraassignment</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:21:50 PM</td>
+<td>
+<a href="#" class="linked" test-id='12' id='12'>Jsonassignment</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+<span class='badge log badge-danger'>2</span>
+</span>
+<p class="name"></p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4></h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:21:41 PM</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>getEmployee</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:21:45 PM</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>create_employee</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:21:46 PM</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>getEmployee</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:21:46 PM</td>
+<td>
+<a href="#" class="linked" test-id='6' id='6'>createandreplace_employee</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">Smoke</p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>Smoke</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:21:41 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>getTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:21:46 PM</td>
+<td>
+<a href="#" class="linked" test-id='8' id='8'>gitcurdassignment</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:21:47 PM</td>
+<td>
+<a href="#" class="linked" test-id='10' id='10'>jiraassignment</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:21:50 PM</td>
+<td>
+<a href="#" class="linked" test-id='12' id='12'>Jsonassignment</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view author-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Author</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">4</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">divya123</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>divya123</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:21:41 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>getTest</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+<span class='badge log badge-danger'>2</span>
+</span>
+<p class="name"></p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4></h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:21:41 PM</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>getEmployee</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:21:45 PM</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>create_employee</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:21:46 PM</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>getEmployee</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:21:46 PM</td>
+<td>
+<a href="#" class="linked" test-id='6' id='6'>createandreplace_employee</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">alka</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>alka</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:21:41 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>getTest</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">divya</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>divya</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:21:46 PM</td>
+<td>
+<a href="#" class="linked" test-id='8' id='8'>gitcurdassignment</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:21:47 PM</td>
+<td>
+<a href="#" class="linked" test-id='10' id='10'>jiraassignment</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:21:50 PM</td>
+<td>
+<a href="#" class="linked" test-id='12' id='12'>Jsonassignment</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Mar 11, 2023 02:21:41 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Mar 11, 2023 02:21:55 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>10</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>3</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='76%'>
+<b>10</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='23%'><b>3</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='50%'><b>19</b> events passed</small></div>
+<div>
+<small data-tooltip='7%'><b>3</b> events failed,
+<b data-tooltip='%'>16</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"getTest":4.127,"getEmployee":4.883,"getTest":0.004,"create_employee":1.636,"getEmployee":0.12,"createandreplace_employee":0.169,"createandreplace_employee":0,"gitcurdassignment":4.11,"create_employee":0,"jiraassignment":3.311,"jiraassignment":0,"Jsonassignment":4.442,"gitcurdassignment":0
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 author-container">
+<div class="card">
+<div class="card-header"><p>Author</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead>
+<tbody>
+<tr>
+<td>divya123</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td></td>
+<td>2</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>50%</td>
+</tr>
+<tr>
+<td>alka</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>divya</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>66.667%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>getclass</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>75%</td>
+</tr>
+<tr>
+<td></td>
+<td>2</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>50%</td>
+</tr>
+<tr>
+<td>Smoke</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>75%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 10,
+failParent: 3,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 19,
+failEvents: 3,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 16
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

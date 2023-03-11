@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="api.listener.TestListener"></listener>
+    </listeners>
+    <test verbose="2" parallel = "methods" thread-count="2" preserve-order="true" name="D:/APIAutomation">
+        <classes>
+
+            <class name="com.test.GetTests">
+                <methods>
+                    <include name="getTest" />
+                    <include name="getEmployee" />
+                </methods>
+            </class>
+            <class name="com.test.TestPostcalls">
+                <methods>
+                    <include name="create_employee" />
+                    <include name="createandreplace_employee" />
+
+                </methods>
+            </class>
+            <class name="com.test.Gitassignment">
+                <methods>
+                    <include name="gitcurdassignment"></include>
+                </methods>
+            </class>
+            <class name="com.test.JiraAssignment">
+                <methods>
+                    <include name="jiraassignment"></include>
+                </methods>
+            </class>
+            <class name="com.test.JSONAssignment">
+                <methods>
+                    <include name="Jsonassignment"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
