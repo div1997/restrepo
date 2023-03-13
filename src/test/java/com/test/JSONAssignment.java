@@ -1,6 +1,7 @@
 package com.test;
 
 import api.annotation.frameworkannotation;
+import apirequestbuilder.BaseURI;
 import com.api.utills.Randomdatautills;
 import com.api.utills.logreportutills;
 import com.github.javafaker.Faker;
@@ -21,8 +22,8 @@ public class JSONAssignment
     public void Jsonassignment() {
 
         // get call
-        Response res = given().header("Content-type", "Application/JSON")
-                .when().get("http://localhost:3000/employee");
+        Response res = BaseURI.buildgeturi()
+                .when().get("/employee");
         int size = res.jsonPath().getList("$").size();
         logreportutills.pass(" no of user :" + size);
 
@@ -46,10 +47,10 @@ public class JSONAssignment
 
         // postcall
 
-        Response post_res = given().header("Content-Type", "Application/JSON")
+        Response post_res = BaseURI.buildgeturi()
                 .log()
                 .all()
-                .body(jobj.toString()).when().post("http://localhost:3000/employee");
+                .body(jobj.toString()).when().post("/employee");
 
         logreportutills.logresponse(post_res.prettyPrint());
 
@@ -62,20 +63,20 @@ public class JSONAssignment
         JSONObject jobj2 = new JSONObject();
         jobj2.put("name", Randomdatautills.getname());
 
-        Response update_res = given().header("Content-Type", "Application/JSON")
+        Response update_res =BaseURI.buildgeturi()
                 .log()
                 .all()
-                .body(jobj2.toString()).when().patch("http://localhost:3000/employee/"+id);
+                .body(jobj2.toString()).when().patch("/employee/"+id);
         logreportutills.logresponse(update_res.prettyPrint());
 
 
-        Response delete_res = given().delete("http://localhost:3000/employee/"+id);
+        Response delete_res = BaseURI.buildgeturi().delete("/employee/"+id);
         logreportutills.logresponse(delete_res.prettyPrint());
 
 
         // verify the size
-        Response res_update = given().header("Content-type", "Application/JSON")
-                .when().get("http://localhost:3000/employee");
+        Response res_update =BaseURI.buildgeturi()
+                .when().get("/employee");
         int updatesize =res_update.jsonPath().getList("$").size();
         if(size==updatesize)
         {

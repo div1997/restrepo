@@ -15,8 +15,8 @@
             </class>
             <class name="com.test.TestPostcalls">
                 <methods>
-                    <include name="create_employee" />
-                    <include name="createandreplace_employee" />
+                    <exclude name="create_employee" />
+                    <exclude name="createandreplace_employee" />
 
                 </methods>
             </class>

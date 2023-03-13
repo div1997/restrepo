@@ -22,7 +22,7 @@ public class Gitassignment
         //getrepolistsize
         Response getrepo = given()
                 .headers("accept", "application/vnd.github+json", "X-GitHub-Api-Version", "2022-11-28", "Authorization",
-                        "Bearer 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")
+                        "Bearer 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")
                 .get(" https://api.github.com/repos/div1997/Api_automation");
 
         logreportutills.logresponse(getrepo.prettyPrint());
@@ -38,7 +38,7 @@ public class Gitassignment
 
         Response postrepo = given()
                 .headers("accept", "application/vnd.github+json", "X-GitHub-Api-Version", "2022-11-28", "Authorization",
-                        "Bearer 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")
+                        "Bearer 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")
                 .log()
                 .all()
                 .body(gitrepobody)
@@ -72,7 +72,7 @@ public class Gitassignment
         //delete repo
         Response deleterepo = given()
                 .headers("accept", "application/vnd.github+json", "X-GitHub-Api-Version", "2022-11-28", "Authorization",
-                        "Bearer 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")
+                        "Bearer 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")
                 .delete("  https://api.github.com/repos/div1997/"+reponame);
 
         Assertions.assertThat(deleterepo.statusCode()).isEqualTo(204);

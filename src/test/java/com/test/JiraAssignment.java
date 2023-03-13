@@ -20,6 +20,7 @@ public class JiraAssignment
     @frameworkannotation(author={"divya"}, category = {"Smoke", "getclass"})
 
     public void jiraassignment() {
+        String uri= "http://172.17.48.1:8080";
         //create jira task
         Projectjira project = new Projectjira("DEM");
         Jiraissuetype issuename = new Jiraissuetype("Task");
@@ -27,16 +28,18 @@ public class JiraAssignment
         ).issuetype(issuename).gettaskbody();
         Jirafields taskbody = Jirafields.builder().fields(fields).getbody();
 
-        Response createtask = given()
+        Response createtask = given().baseUri(uri)
                 .headers("Content-Type", "Application/JSON", "Authorization",
-                        "Basic ZGl2eWFfMTIzOjEyM0BkaXY=")
+                        "Basic ZGl5YTEyMzoxMjNAZGl5YQ==")
                 .log()
                 .all()
-                .body(taskbody).post("http://192.168.163.1:8080/rest/api/2/issue/");
-        String id = createtask.jsonPath().get("key");
-
+                .body(taskbody).post("/rest/api/2/issue/");
 
         logreportutills.logresponse(createtask.prettyPrint());
+
+        String id = createtask.jsonPath().get("x.key");
+
+
 
 
         // update jira task
@@ -44,11 +47,11 @@ public class JiraAssignment
         ).issuetype(issuename).gettaskbody();
         Jirafields updatetaskbody = Jirafields.builder().fields(fields).getbody();
 
-Response updatetask = given()
-        .headers("Content-Type", "Application/JSON","Authorization","Basic ZGl2eWFfMTIzOjEyM0BkaXY="
+Response updatetask = given().baseUri(uri)
+        .headers("Content-Type", "Application/JSON","Authorization","Basic ZGl5YTEyMzoxMjNAZGl5YQ=="
         )
         .body(updatetaskbody)
-        .put("http://192.168.163.1:8080/rest/api/2/issue/"+id+"/editmeta");
+        .put("/rest/api/2/issue/"+id+"/editmeta");
         logreportutills.logresponse(updatetask.prettyPrint());
     }
         /*
